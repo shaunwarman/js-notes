@@ -30,3 +30,9 @@ Strict mode changes both syntax and runtime behavior. Changes generally fall int
 
 ##### Pass by.. [Examples] (https://gist.github.com/shaunwarman/ff9a05348684a005b087)
 Javascript is pass by value.. unless that value is a reference to an object.
+
+##### Prototype [Examples] (https://gist.github.com/shaunwarman/7c34985e81a28688d4f4)
+When it comes to inheritance, JavaScript only has one construct: objects. Each object has an internal link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. null, by definition, has no prototype, and acts as the final link in this prototype chain.
+
+###### Inheriting properties
+JavaScript objects are dynamic "bags" of properties (referred to as own properties). JavaScript objects have a link to a prototype object. When trying to access a property of an object, the property will not only be sought on the object but on the prototype of the object, the prototype of the prototype, and so on until either a property with a matching name is found or the end of the prototype chain is reached.
