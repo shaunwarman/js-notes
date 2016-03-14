@@ -27,3 +27,6 @@ Strict mode changes both syntax and runtime behavior. Changes generally fall int
 - changes simplifying eval and arguments
 - changes making it easier to write "secure" JavaScript 
 - changes anticipating future ECMAScript evolution.
+
+##### Pass by.. [Examples] (https://gist.github.com/shaunwarman/ff9a05348684a005b087)
+Javascript is pass by value.. unless that value is a reference to an object.
